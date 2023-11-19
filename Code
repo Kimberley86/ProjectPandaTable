@@ -1,0 +1,12 @@
+# Creating a table using lists
+header = ["Name", "Age", "Country\n"]
+data = [
+    ["Michael", 41, "UK"],
+    ["Kimberley", 37, "UK"],
+    ["Joshua", 3, "UK"]
+]
+
+# Displaying the table
+print("{:<10} {:<5} {:<15}".format(*header))  # Print header
+for row in data:
+    print("{:<10} {:<5} {:<15}".format(*row))
